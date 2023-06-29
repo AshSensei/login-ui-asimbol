@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Login UI Project</title>
 </head>
-<body class = "coder-box">
-    <div id="login-card">
-        <h1>Sign In</h1>
-        <h2>username</h2>
-        <h2>password</h2>
+<body>
+    <h1 id="sign-label" >Sign In</h1>
+    <div id="vertical"></div>
+    <div id="login" class ="box-visual">
+        <form class="login-box">
+            <label for "username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            
+            <label for "pwd">Password:</label>
+            <input type="text" id="pwd" name="pwd"><br><br>
+
+            <input type="submit" value="Submit">
+        
+        </form>
+        
     </div>
     
 </body>

@@ -1,17 +1,53 @@
-.coder-box{
+.box-visual{
     border: 1px solid red;
+    margin-left:50px;
+    
 }
-
 body{
+    display:flex;
+    flex-wrap:wrap;
+}
+.center{
     display: flex;
     justify-content:center;
     align-items:center;
     height:100vh;
     width:100vw;
 }
-.login-card{
+#login{
     background-color: lightcoral;
     display:flex;
     justify-content: center;
     flex-direction: column;
+    width:60vw;
+    height:30vh;
+    min-width:200px;
+    min-height:100px;
+    margin-top:20%;
+    margin-left:10%;
+    flex-direction:center;
+    padding-left:10px;
+}
+#vertical{
+    border-left:3px solid black;
+    height: 300px;
+    position:absolute;
+    margin-left:10px;
+}
+
+#sign-label{
+    flex-direction:center;
+}
+
+#username{
+    font-size:20px;
+}
+
+#pwd{
+    font-size:20px;
+    
+}
+
+.login-box label{
+    font-size:20px;
 }
