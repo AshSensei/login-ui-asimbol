@@ -21,16 +21,16 @@
     <div id="vertical"></div>
     
     <!--log in box and content-->
-    <div id="login" class ="box-visual">
+    <div id="login" class ="box-visual login-text">
         <form class="login-box">
             <!--username and password input areas-->
-            <label for "username"  class ="login-text">Username:</label>
-            <input type="text"  name="username" placeholder="Username or email"  class ="login-text"><br><br>
-            <label for "pwd"  class ="login-text">Password:&nbsp;</label>
-            <input type="password" name="pwd" placeholder="Password" class ="login-text"><br><br>
+            <label for "username">Username:</label>
+            <input type="text"  name="username" placeholder="Username or email"  ><br><br>
+            <label for "pwd">Password:&nbsp;</label>
+            <input type="password" name="pwd" placeholder="Password"><br><br>
 
-            <!--checkbox to stay signed in or not, text functions also as a button-->
-            <input type="checkbox" id="sign" ><a href="#" id="sign-checkbox"  class ="login-text" onclick='checkbox()'>Stay Signed In</a> <br><br>
+            <!--checkbox to stay signed in or not, text also functions as the checkbox-->
+            <input type="checkbox" id="stay-signed" ><a href="#" id="sign-checkbox" onclick='checkbox()'>Stay Signed In</a> <br><br>
             <!--sign in button-->
             <input type="submit"  id="submit" value ="Sign In" >
         
@@ -42,7 +42,7 @@
         // function to make the link act as a button
         function checkbox(){
             //if clicked, makes the checkbox uncheck or check depending on current state
-            const check = document.getElementById("sign");
+            const check = document.getElementById("stay-signed");
             if(check.checked){
                 check.checked=false;
             }
