@@ -9,24 +9,35 @@
 
 </head>
 <body>
-    <!--
+    
     <h1 id="sign-label" >Sign In</h1>
     <div id="vertical"></div>
-    -->
+    
     <div id="login" class ="box-visual">
         <form class="login-box">
             <label for "username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Username or email"><br><br>
             
-            <label for "pwd">Password:</label>
+            <label for "pwd">Password:&nbsp;</label>
             <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
-            <input type="checkbox"><a href="">Stay Signed In</a> <br><br>
+            <input type="checkbox" id="sign"><a href="#" id="sign-box" onclick='checkbox()'>Stay Signed In</a> <br><br>
             <input type="submit" value="Submit" id="submit">
         
         </form>
         
     </div>
     
-    
+    <script>
+        function checkbox(){
+            const check = document.getElementById("sign");
+            if(check.checked){
+                check.checked=false;
+            }
+            else{
+                check.checked=true;
+            }
+            
+        }
+    </script>
 </body>
 </html>

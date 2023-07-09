@@ -7,19 +7,43 @@
 body{
     display:flex;
     justify-content:center;
+    gap:5vw;
     align-items:center;
     height:100vh;
     margin:0%;
 }
+
+#sign-label{
+    flex-direction:center;
+}
+
+#vertical{
+    border-left:3px solid black;
+    height: 19.5vh;
+    max-height:260px;
+    min-height:162.5px;
+}
+
+
 
 #login{
     display:flex;
     background-color: lightcoral;
     justify-content: center;
     align-items:center;
-    width:300px;
-    height:300px;
+    height:30vh;
+    width:25vw;
+    max-width:500px;
+    max-height:400px;
+    min-height:250px;
+    min-width:200px;
     
+    
+}
+
+#sign-box{
+    text-decoration: none;
+    color:inherit;
 }
 
 #submit{
@@ -30,15 +54,8 @@ body{
 }
 
 
-#vertical{
-    border-left:3px solid black;
-    height: 300px;
-    position:absolute;
-}
 
-#sign-label{
-    flex-direction:center;
-}
+
 
 #username{
     font-size:15px;
