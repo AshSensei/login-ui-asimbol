@@ -1,4 +1,5 @@
 body{
+    background-color: #E8E8E4;
     display:flex;
     justify-content:center;
     gap:5vw;
@@ -8,7 +9,7 @@ body{
 }
 
 .box-visual{
-    border: 1px solid red;
+    
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.43) 0px 5px 30px, rgba(0, 0, 0, 0.215) 0px 6px 8px;
     border-radius:20px;
@@ -16,10 +17,12 @@ body{
 
 #sign-label{
     flex-direction:center;
+    font-family: 'Inter', sans-serif;
+    font-weight:300;
 }
 
 #vertical{
-    border-left:3px solid black;
+    border-left:2.5px solid black;
     height: 19.5vh;
     max-height:260px;
     min-height:162.5px;
@@ -27,7 +30,7 @@ body{
 
 #login{
     display:flex;
-    background-color: lightcoral;
+    background-color: #ECE4DB;
     justify-content: center;
     align-items:center;
     height:30vh;
@@ -35,23 +38,28 @@ body{
     max-width:500px;
     max-height:400px;
     min-height:200px;
-    min-width:170px;
+    min-width:200px;
 }
 
 #sign-box{
     text-decoration: none;
     color:inherit;
+    font-family: 'Inter', sans-serif;
 }
 
 #submit{
+    border-left:1.2px solid black;
     display:flex;
     justify-content:center;
     align-items:center;
     margin: 0 auto;
+    border-radius:4px;
+    width:100px;
 }
 
 
 .login-text{
     font-size:15px;
+    font-family: 'Inter', sans-serif;
 }
 
