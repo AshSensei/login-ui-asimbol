@@ -1,9 +1,3 @@
-.box-visual{
-    border: 1px solid red;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.43) 0px 5px 30px, rgba(0, 0, 0, 0.215) 0px 6px 8px;
-    border-radius:20px;
-}
 body{
     display:flex;
     justify-content:center;
@@ -11,6 +5,13 @@ body{
     align-items:center;
     height:100vh;
     margin:0%;
+}
+
+.box-visual{
+    border: 1px solid red;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.43) 0px 5px 30px, rgba(0, 0, 0, 0.215) 0px 6px 8px;
+    border-radius:20px;
 }
 
 #sign-label{
@@ -24,8 +25,6 @@ body{
     min-height:162.5px;
 }
 
-
-
 #login{
     display:flex;
     background-color: lightcoral;
@@ -35,10 +34,8 @@ body{
     width:25vw;
     max-width:500px;
     max-height:400px;
-    min-height:250px;
-    min-width:200px;
-    
-    
+    min-height:200px;
+    min-width:170px;
 }
 
 #sign-box{
@@ -54,19 +51,7 @@ body{
 }
 
 
-
-
-
-#username{
-    font-size:15px;
-}
-
-#pwd{
-    font-size:15px;
-    
-}
-
-.login-box label{
+.login-text{
     font-size:15px;
 }
 

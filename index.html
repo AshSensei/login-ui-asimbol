@@ -15,13 +15,13 @@
     
     <div id="login" class ="box-visual">
         <form class="login-box">
-            <label for "username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Username or email"><br><br>
+            <label for "username"  class ="login-text">Username:</label>
+            <input type="text"  name="username" placeholder="Username or email"  class ="login-text"><br><br>
             
-            <label for "pwd">Password:&nbsp;</label>
-            <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
-            <input type="checkbox" id="sign"><a href="#" id="sign-box" onclick='checkbox()'>Stay Signed In</a> <br><br>
-            <input type="submit" value="Submit" id="submit">
+            <label for "pwd"  class ="login-text">Password:&nbsp;</label>
+            <input type="password" name="pwd" placeholder="Password" class ="login-text"><br><br>
+            <input type="checkbox" ><a href="#" id="sign-box" onclick='checkbox()'  class ="login-text">Stay Signed In</a> <br><br>
+            <input type="submit" value="Submit" id="submit" >
         
         </form>
         
@@ -33,6 +33,7 @@
             if(check.checked){
                 check.checked=false;
             }
+
             else{
                 check.checked=true;
             }
@@ -40,4 +41,6 @@
         }
     </script>
 </body>
+
+
 </html>
