@@ -1,3 +1,4 @@
+/*body adjustments to space out objects*/
 body{
     background-color: #E8E8E4;
     display:flex;
@@ -8,6 +9,7 @@ body{
     margin:0%;
 }
 
+/*box visual/color settings*/
 .box-visual{
     
     padding: 20px;
@@ -15,12 +17,14 @@ body{
     border-radius:20px;
 }
 
+/*"Sign In" text customizations"*/
 #sign-label{
     flex-direction:center;
     font-family: 'Inter', sans-serif;
     font-weight:300;
 }
 
+/*creates the vertical line between "sign in" and the login box*/
 #vertical{
     border-left:2.5px solid black;
     height: 19.5vh;
@@ -28,6 +32,7 @@ body{
     min-height:162.5px;
 }
 
+/*login box css*/
 #login{
     display:flex;
     background-color: #ECE4DB;
@@ -41,12 +46,14 @@ body{
     min-width:200px;
 }
 
-#sign-box{
+/*link "stay signed in" functioning as a button*/
+#sign-checkbox{
     text-decoration: none;
     color:inherit;
     font-family: 'Inter', sans-serif;
 }
 
+/*"sign in" button*/
 #submit{
     border-left:1.2px solid black;
     display:flex;
@@ -57,7 +64,7 @@ body{
     width:100px;
 }
 
-
+/*text for the login box*/
 .login-text{
     font-size:15px;
     font-family: 'Inter', sans-serif;

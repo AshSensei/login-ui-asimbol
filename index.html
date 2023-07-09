@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--responsive settings and style sheet link-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
+    <!--google fonts used for sign in and design-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 
-    <title>Login UI Project</title>
-
-
-</head>
-<body>
     
+    <title>Login UI Project</title>
+</head>
+
+<body>
+    <!--sign in and vertical border line-->
     <h1 id="sign-label" >Sign In</h1>
     <div id="vertical"></div>
     
+    <!--log in box and content-->
     <div id="login" class ="box-visual">
         <form class="login-box">
+            <!--username and password input areas-->
             <label for "username"  class ="login-text">Username:</label>
             <input type="text"  name="username" placeholder="Username or email"  class ="login-text"><br><br>
-            
             <label for "pwd"  class ="login-text">Password:&nbsp;</label>
             <input type="password" name="pwd" placeholder="Password" class ="login-text"><br><br>
-            <input type="checkbox" id="sign" ><a href="#" id="sign-box"  class ="login-text" onclick='checkbox()'>Stay Signed In</a> <br><br>
+
+            <!--checkbox to stay signed in or not, text functions also as a button-->
+            <input type="checkbox" id="sign" ><a href="#" id="sign-checkbox"  class ="login-text" onclick='checkbox()'>Stay Signed In</a> <br><br>
+            <!--sign in button-->
             <input type="submit"  id="submit" value ="Sign In" >
         
         </form>
-        
     </div>
     
+    
     <script>
+        // function to make the link act as a button
         function checkbox(){
+            //if clicked, makes the checkbox uncheck or check depending on current state
             const check = document.getElementById("sign");
             if(check.checked){
                 check.checked=false;
@@ -46,6 +54,4 @@
         }
     </script>
 </body>
-
-
 </html>
