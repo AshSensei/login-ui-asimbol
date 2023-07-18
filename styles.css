@@ -25,7 +25,7 @@ body{
 
 /*creates the vertical line between "sign in" and the login box*/
 #vertical{
-    border-left:2.5px solid black;
+    border-left:2.5px solid rgb(100, 98, 98);
     height: 19.5vh;
     max-height:260px;
     min-height:162.5px;
